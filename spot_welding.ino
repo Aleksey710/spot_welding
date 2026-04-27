@@ -56,6 +56,7 @@ LCD
 -----------------------------
 
 */
+//------------------------------------------------
 #include <Arduino.h>
 #include <HardwareTimer.h>
 
@@ -265,7 +266,7 @@ void drawMenu() {
     lcd.print("*");
   }
 }
-//================================================
+//------------------------------------------------
 // Interrupt Service Routine (ISR)
 void encoderStatus(void)
 {
@@ -296,7 +297,7 @@ void encoderStatus(void)
 
     drawMenu();
 }
-
+//------------------------------------------------
 // Function to calculate latest number of rotary encoder moves
 int8_t encoderGet(void)
 {
@@ -310,3 +311,4 @@ int8_t encoderGet(void)
  
     return val;
 }
+//------------------------------------------------
