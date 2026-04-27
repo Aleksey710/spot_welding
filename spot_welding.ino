@@ -192,7 +192,7 @@ void loop() {
     delay(100);   // Wait 10 milliseconds
 }
 //------------------------------------------------
-// ===== ENCODER ISR =====
+// ENCODER ISR
 void readEncoder() {
   unsigned long now = micros();
   if (now - lastTime < 200) return;
@@ -205,7 +205,7 @@ void readEncoder() {
   }
 }
 //------------------------------------------------
-// ===== ОБРАБОТКА ЭНКОДЕРА =====
+// ОБРАБОТКА ЭНКОДЕРА
 void handleEncoder() {
   if (encoderDelta == 0) return;
 
